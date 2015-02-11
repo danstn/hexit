@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+  - "2.2.0"
+  - ruby-head
+deploy:
+  provider: heroku
+  api_key:
+    secure: GzEmkgyI1QH8VB3Gp0BOio0dfXZ1Ze/cShtKbgc2NxDChJR7USqKu0vWxMdVGjM3yTaKaT7l0atQc5PIWU2Eq2JzORbGRpJwdrt/PzNwUtqu/fUBFm1JCJKYc3F4R3xsNy5C/J8REKbH9hKCFrjydD5AdRu3HMIH+RtxjDbvW2k=
+  app: hexit
+  on:
+    branch: master
+    repo: dzotokan/hexit
+
