@@ -5,7 +5,11 @@ class Hexit < Sinatra::Base
   set :root, File.dirname(__FILE__)
 
   get '/' do
-    'HELLO FROM HEXIT!'
+    'Hello'
+  end
+  
+  get '/hex' do
+    params[:data]
   end
 end
 
