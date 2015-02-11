@@ -3,6 +3,7 @@ ruby '2.2.0'
 
 gem 'sinatra'
 gem 'rake'
+gem 'json'
 
 group :test, :development do
   gem 'rspec'
