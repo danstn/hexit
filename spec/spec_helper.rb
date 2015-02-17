@@ -1,6 +1,7 @@
 # spec/spec_helper.rb
 ENV['RACK_ENV'] = 'test'
 
+require 'rspec'
 require 'rack/test'
 
 require_relative File.join('..', 'app/hexit')

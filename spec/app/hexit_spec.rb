@@ -42,7 +42,7 @@ describe Hexit do
 
   describe 'GET /secret' do
 
-    subject { get '/secret' }
+    subject(:response) { get '/secret' }
 
     context 'when the auth is successful' do
       before do
@@ -50,17 +50,13 @@ describe Hexit do
       end
 
       it 'returns 200' do
-        expect(subject.status).to eq 200
+        expect(response.status).to eq 200
       end
     end
 
     context 'when the auth is not successful' do
-      before do
-        authorize 'blah', 'blah'
-      end
-
       it 'returns 401' do
-        expect(subject.status).to eq 401
+        expect(response.status).to eq 401
       end
     end
 
